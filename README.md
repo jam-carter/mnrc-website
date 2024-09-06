@@ -1,9 +1,8 @@
 ## MNRC-CONCEPT
 
-This is a concept website for my workplace and also the last iteration for this idea
+This website concept is the final iteration of this design approach, developed for the Morley Noranda Recreation Club. 
 
-Made with NextJS and TypeScript, using CSS modules to ensure the clarity of files
+Built using Next.js and TypeScript, with CSS modules to maintain a clear and organized file structure, it represents an early stage of development.
 
-This idea was not pursued further due to a combination of learning new techniques throughout the production of it, as well as  wanting to take the creative aspect in a different approach
-
+The project was ultimately not pursued further due to the ongoing acquisition of new techniques during production and a decision to explore a different creative direction.
 
