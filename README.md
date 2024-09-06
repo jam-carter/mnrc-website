@@ -1,6 +1,6 @@
 ## MNRC-CONCEPT
 
-This is a concept website for my workplace and also the last iteration of this  style
+This is a concept website for my workplace and also the last iteration for this idea
 
 Made with NextJS and TypeScript, using CSS modules to ensure the clarity of files
 
