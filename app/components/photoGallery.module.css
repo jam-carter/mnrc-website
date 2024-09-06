@@ -1,0 +1,21 @@
+/* components/PhotoGallery.module.css */
+.imageContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+    margin: 40px;
+}
+  
+.swiper-button-next, .swiper-button-prev {
+    color: #000; /* Change the color as needed */
+}
+  
+.swiper-pagination-bullet {
+    background: #000; /* Change the color as needed */
+}
+

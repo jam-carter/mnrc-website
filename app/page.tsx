@@ -1,113 +1,122 @@
+// Colour Pallette: jet - #363537, 'white' - #fbfef9, crimson - #d62839
 import Image from "next/image";
+import styles from "./homePage.module.css";
+import PhotoGallery from "./components/photoGallery";
+import NavBarHome from "./components/navBarHome";
+import InfoCard from "./components/infoCard";
+import Footer from "./components/Footer";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+    <div className={styles.container}>
+      <div className = {styles.backgroundImage}>
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/images/placeholderBowls.jpg"
+          alt="Background Image"
+          fill
+          style={{ objectFit: "cover" }}
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <NavBarHome />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <div className={styles.whiteBackround}>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
+        <div className={styles.content}>
+          <p>
+            MNRC is your local Community Recreation Club and is home to Morley
+            Bowling Club, Noranda Tennis Club, Morley Dart Club, Noranda City
+            Football Club, and Brumbies Country Music Club.
           </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <br />
+
+          <p>
+            Here at the recreation club, we support various local communities
+            such as the Noranda and Morley Lions Club, Morley and Noranda Probus,
+            Dianella Weight Watchers, and The Burgher Welfare League of WA Inc.
           </p>
-        </a>
+
+          <br />
+
+          <p>
+            The Morley Noranda Recreation Club has a full-service bar that
+            operates 7 days a week:
+            <br />
+            • Monday – Wednesday: 11.30am to 8.00pm
+            <br />
+            • Thursday – Sunday: 11.30am till Late
+          </p>
+
+          <br />
+
+          <p>
+            Our Sports Bar offers five sporting viewing opportunities,
+            self-service TAB machines, Video Gaming Lottery Machines, and a
+            relaxing environment with comfortable seating that opens onto the
+            alfresco area overlooking the bowling greens.
+          </p>
+
+          <br />
+
+          <p>
+            As a community-oriented venue, we offer a little bit of something for
+            everyone, ranging from events such as Tuesday night Bingo and
+            Wednesday Corporate Bowls to Friday night meals every two weeks and a
+            playground for the children to run and play in.
+          </p>
+        </div>
+
+        <InfoCard
+          title = "Functions"
+          description = "We offer a variety of functions to suit all of your needs. Our club provides four different sized rooms for your events, meetings and gatherings of all sizes. Our function rooms are all fully equipped with all necessary equipment and facilities to meet your needs."
+          imageSrc = "/images/MainHall/mnrcMainHall1.jpg"
+          altText = "Photo of the Main Hall"
+        />
+      
+        <InfoCard
+          title = "Join Now !"
+          description="Become a member of the MNRC today and enjoy exclusive benefits, events, and facilities. Our membership offers a great way to get involved with the local community and participate in a wide range of activities."
+          imageSrc = "/images/MainHall/mnrcMainHall1.jpg"
+          altText = "Photo of the Main Hall"
+        />
+
+        <InfoCard
+          title = "Affiliates"
+          description="MNRC proudly supports and collaborates with a variety of local clubs and organizations. Learn more about our affiliates and how we work together to build a stronger community."
+          imageSrc = "/images/MainHall/mnrcMainHall1.jpg"
+          altText = "Photo of the Main Hall"
+        />
+
+        <InfoCard
+          title = "Events"
+          description="Join us for a range of exciting events throughout the year. From sports tournaments and social gatherings to community festivals and more, there's always something happening at MNRC."
+          imageSrc = "/images/MainHall/mnrcMainHall1.jpg"
+          altText = "Photo of the Main Hall"
+        />
+
+        <InfoCard
+          title = "Management"
+          description="Meet the dedicated team behind the Morley Noranda Recreation Club. Our management team works tirelessly to ensure the smooth running of the club and the enjoyment of all our members."
+          imageSrc = "/images/MainHall/mnrcMainHall1.jpg"
+          altText = "Photo of the Main Hall"
+        />
+
+        <InfoCard
+          title = "History"
+          description="Discover the rich history of the Morley Noranda Recreation Club. From its humble beginnings to the vibrant community hub it is today, learn about the milestones and achievements that have shaped our club."
+          imageSrc = "/images/MainHall/mnrcMainHall1.jpg"
+          altText = "Photo of the Main Hall"
+        />
+
+        <PhotoGallery />
+
       </div>
-    </main>
+
+    
+
+      <Footer />
+    
+    </div>
   );
 }

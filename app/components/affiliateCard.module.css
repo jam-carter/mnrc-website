@@ -1,0 +1,81 @@
+/* components/FunctionCard.module.css */
+
+.card {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 300px 50px 300px;
+    border-radius: 10px;   
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: #0071f3ad;
+    padding: 20px;
+}
+  
+.infoCardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    align-items: center;
+    width: 160%; 
+    background-color: white;
+    margin-right: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.infoCardText h2 {
+    margin-bottom: 10px;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.infoCardText p {
+    text-align: center;
+}
+  
+.infoCardImage {
+    position: relative;
+    width: 100%; 
+    height: 300px;
+    overflow: hidden;
+    margin-left: 60px;
+    padding: 20px;
+    border-radius: 10px;
+} 
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    padding-top: 40px;
+}
+  
+.primaryButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.secondaryButton {
+    background-color: #eaeaea;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.primaryButton:hover, .secondaryButton:hover {
+    opacity: 0.8;
+}
+  
+
+

@@ -1,0 +1,60 @@
+.container {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.backgroundImage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.whiteBackround {
+    background-color: f5f5f5;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: white;
+    margin-top: 100vh;
+    padding-left: 450px;
+    padding-right: 450px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px 160px;
+}
+
+.content a {
+    color: #0070f3;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.membershipTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+  
+.membershipTable th,
+.membershipTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.membershipTable th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+

@@ -1,0 +1,25 @@
+.footer {
+  background-color: #363537;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+  
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+  
+.topButton {
+  background: none;
+  border: none;
+  color: #FFFFFF; /* Change as needed */
+  cursor: pointer;
+  font-size: 16px; /* Adjust size as needed */
+  padding: 10px;
+  position: fixed; /* Optional: makes the button always visible */
+  bottom: 20px; /* Position from bottom */
+  right: 20px; /* Position from right */
+}
+  

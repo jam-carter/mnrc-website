@@ -1,0 +1,64 @@
+.container {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .backgroundImage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.whiteBackround {
+    background-color: #fbfef9;
+}
+    
+.content {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: #fbfef9;
+    margin-top: 100vh;
+    padding-left: 450px;
+    padding-right: 450px;
+}
+
+.historyBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 50px;    
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: #d62839;
+    padding: 20px;
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%; 
+    background-color: white;
+    margin-right: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.imageBlock {
+    position: relative;
+    width: 100%; 
+    height: 300px;
+    overflow: hidden;
+    margin-left: 60px;
+    padding: 20px;
+    border-radius: 10px;
+} 
+
