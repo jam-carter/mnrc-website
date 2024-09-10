@@ -4,7 +4,7 @@ import styles from './footer.module.css';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
-    console.log('scrollToTop function called'); // Added console log
+    console.log('scrollToTop function called'); 
     document.body.scrollIntoView({
       behavior: 'smooth'
     });
