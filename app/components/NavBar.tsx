@@ -36,20 +36,14 @@ const NavBar = () => {
 
   const pageTitle = () => {
     switch(pathname) {
-      case "/affiliates": 
-        return "Affiliates";
       case "/contact": 
         return "Contact";
-      case "/events": 
-        return "Events";
       case "/history": 
         return "History";
       case "/management": 
         return "Management";
       case "/membership": 
         return "Membership";
-      case "/rooms": 
-        return "Rooms";
       default: 
         return "Home";
     }
