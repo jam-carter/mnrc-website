@@ -30,7 +30,7 @@ const NavBar = () => {
     console.log("Event listener added");
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      console.log("event listender removed");
+      console.log("event listener removed");
     };
   }, []);
 
