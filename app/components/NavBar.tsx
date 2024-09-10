@@ -65,18 +65,10 @@ const NavBar = () => {
         </div>
 
         <div className={styles.nav}>
-          <Link 
-            href="/affiliates"
-            onMouseEnter={() => console.log("hovered")}
-          >
-            Affiliates
-          </Link>
           <Link href="/contact">Contact</Link>
-          <Link href="/events">Events</Link>
           <Link href="/history">History</Link>
           <Link href="/management">Management</Link>
           <Link href="/membership">Membership</Link>
-          <Link href="/rooms">Rooms</Link>
         </div>
     </div>
   );
