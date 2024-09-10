@@ -37,7 +37,7 @@ const NavBar = () => {
             src="./images/logos/logo1/mnrcLogoNoBackround.png" 
             alt="Logo" 
             width={500} 
-            height={400}
+            height={40}
           />
         </Link>
         
