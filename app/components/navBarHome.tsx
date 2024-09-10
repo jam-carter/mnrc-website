@@ -34,7 +34,7 @@ const NavBar = () => {
     <div className={`${styles.navContainer} ${isScrolled ? styles.scrolledNavbar : styles.notScrolledNavbar}`}>  
         <Link href="/" className={styles.navImage}>
           <Image 
-            src="/Images/Logos/Logo1/mnrcLogoNoBackround.png" 
+            src="/images/logos/logo1/mnrcLogoNoBackround.png" 
             alt="Logo" 
             width={500} 
             height={400}
@@ -53,11 +53,9 @@ const NavBar = () => {
             Affiliates
           </Link>
           <Link href="/contact">Contact</Link>
-          <Link href="/events">Events</Link>
           <Link href="/history">History</Link>
           <Link href="/management">Management</Link>
           <Link href="/membership">Membership</Link>
-          <Link href="/rooms">Rooms</Link>
         </div>
     </div>
   );
