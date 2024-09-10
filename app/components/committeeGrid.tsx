@@ -1,4 +1,3 @@
-// components/CommitteeMember.tsx
 import Image from 'next/image';
 
 type CommitteeMemberProps = {
